@@ -49,3 +49,21 @@ def divide(m, n):
     result = -result if negative_result else result
 
     return result
+
+
+def gcd(m, n):
+    m = abs(m)
+    n = abs(n)
+
+    if m == 0:
+        return n
+    if n == 0:
+        return m
+
+    while m != n:
+        if m > n:
+            m -= n
+        else:
+            n -= m
+
+    return m

@@ -17,3 +17,6 @@ class FooCalculator:
 
     def divide(self, m, n):
         return c.divide(m, n)
+
+    def gcd(self, m, n):
+        return c.gcd(m, n)
